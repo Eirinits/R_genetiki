@@ -1,5 +1,5 @@
 --- 
-title: "A Minimal Book Example"
+title: "Εφαρμογές της R στη γενετική"
 author: "Eirini Tsirvouli"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
