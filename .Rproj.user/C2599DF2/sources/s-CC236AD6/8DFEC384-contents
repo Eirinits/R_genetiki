@@ -1,0 +1,5 @@
+book_filename: "Εφαρμογές της R στη γενετική"
+delete_merged_file: true
+language: 
+  ui:
+    chapter_name: "Chapter "
