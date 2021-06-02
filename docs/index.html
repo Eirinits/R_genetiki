@@ -24,7 +24,7 @@
 <meta name="author" content="Eirini Tsirvouli" />
 
 
-<meta name="date" content="2021-06-01" />
+<meta name="date" content="2021-06-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -173,12 +173,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Εφαρμογές της R στη γενετική</h1>
 <p class="author"><em>Eirini Tsirvouli</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-01</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-06-02</em></p>
 </div>
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">1</span> Προετοιμασία</h1>
-<p>Οι συμμετέχοντες καλούνται να εγκαταστήσουν την R και το RStudio. Πρέπει επίσης να είναι να εγκαταστήσουν έναν αριθμό πακέτων R (R packages), να προετοιμάσουν τον κατάλογο εργασίας τους (working directory) και να κατεβάσουν τα αρχεία που θα χρειαστούμε σε αυτό το demo.</p>
-<p>Για να αποφύγουμε τυχών καθυστερήσεις και την αντιμετώπιση προβλημάτων (troubleshooting) κατά τη διάρκεια του demo, οι συμμετέχοντες θα πρέπει να ακολουθήσουν τις παρακάτω οδηγίες για να κατεβάσουν και να εγκαταστήσουν τα πάντα εκ των προτέρων. Για τυχών ερωτήσεις, μπορείτε να επικοινωνήσετε μαζί μου μέσω email: <a href="mailto:eirini.tsirvouli@ntnu.no" class="email">eirini.tsirvouli@ntnu.no</a></p>
+<p>Οι συμμετέχοντες καλούνται να εγκαταστήσουν την R και το RStudio πριν την έναρξη του demo. Πρέπει επίσης να είναι να εγκαταστήσουν έναν αριθμό πακέτων R (R packages), να προετοιμάσουν τον κατάλογο εργασίας τους (working directory) και να κατεβάσουν τα αρχεία που θα χρειαστούμε σε αυτό το demo.</p>
+<p>Για να αποφύγουμε τυχόν καθυστερήσεις και την αντιμετώπιση προβλημάτων κατά τη διάρκεια του demo, οι συμμετέχοντες θα πρέπει να ακολουθήσουν τις παρακάτω οδηγίες για να κατεβάσουν και να εγκαταστήσουν τα πάντα εκ των προτέρων. Για τυχόν ερωτήσεις, μπορείτε να επικοινωνήσετε μαζί μου μέσω email: <a href="mailto:eirini.tsirvouli@ntnu.no" class="email">eirini.tsirvouli@ntnu.no</a></p>
 <p><strong>Εγκαταστήστε τα R και RStudio</strong></p>
 <p>Η R και το RStudio είναι δύο ξεχωριστά λογισμικά:</p>
 <p>Η R είναι μια γλώσσα προγραμματισμού που είναι ιδιαίτερα ισχυρή για ανάλυση δεδομένων, στατιστικούς υπολογισμούς και γραφικά.
@@ -225,13 +225,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Για να δημιουργήσετε ένα έργο, μεταβείτε στο μενού File και κάντε κλικ στο New project ….
 <img src="images/RStudio_project.png" width="536" /></p>
-<p>Στο παράθυρο που θα εμφανιστεί επιλέξτε New Directory και, στη συνέχεια, New Project. Για “Directory name:” εισαγάγετε R_genetki. Η επιλογή “Create project as subdirectory of” ορίζει που θα δημιουργηθεί ο φάκελος που θα περιέχει όλα τα αρχεία του project που μόλις δημιουργήσαμε. Μπορείτε να αφήσετε την προεπιλογή, που είναι ο αρχικός σας προορισμός “~”.</p>
+<p>Στο παράθυρο που θα εμφανιστεί επιλέξτε New Directory και, στη συνέχεια, New Project. Για “Directory name:” εισαγάγετε R_genetiki. Η επιλογή “Create project as subdirectory of” ορίζει που θα δημιουργηθεί ο φάκελος που θα περιέχει όλα τα αρχεία του project που μόλις δημιουργήσαμε. Μπορείτε να αφήσετε την προεπιλογή, που είναι ο αρχικός σας προορισμός “~”.</p>
 <p>Τέλος, κάντε κλικ στο Create project.</p>
 </div>
 <div id="δημιουργία-του-πρώτου-σας-σεναρίου-r-r-script" class="section level3">
 <h3><span class="header-section-number">1.1.2</span> Δημιουργία του πρώτου σας σεναρίου R (R script)</h3>
 <p>Τώρα που είμαστε έτοιμοι να ξεκινήσουμε την εξερεύνηση της R, θα θέλουμε να διατηρήσουμε ένα αρχείο των εντολών που χρησιμοποιούμε. Για να το κάνουμε αυτό μπορούμε να δημιουργήσουμε ένα σενάριο R:</p>
-<p>Κάντε κλικ στο μενού File και επιλέξτε New file και, στη συνέχεια, R script. Προτού προχωρήσουμε περισσότερο, αποθηκεύστε το σενάριό σας κάνοντας κλικ στο εικονίδιο αποθήκευσης / δίσκου ή κάντε κλικ στο μενού File και επιλέξτε Save. Στο παράθυρο “Save file” που θα εμφανιστεί, ονομάστε το αρχείο σας “r_intro”. Το νέο σενάριο r_intro.R θα πρέπει να εμφανίζεται στην καρτέλα Files.</p>
+<p>Κάντε κλικ στο μενού “File” και επιλέξτε “New file” και, στη συνέχεια, R script. Προτού προχωρήσουμε περισσότερο, αποθηκεύστε το σενάριό σας κάνοντας κλικ στο εικονίδιο αποθήκευσης / δίσκου ή κάντε κλικ στο μενού File και επιλέξτε Save. Στο παράθυρο “Save file” που θα εμφανιστεί, ονομάστε το αρχείο σας “r_intro”. Το νέο σενάριο r_intro.R θα πρέπει να εμφανίζεται στην καρτέλα Files.</p>
 </div>
 <div id="h-περιβάλλον-του-rstudio" class="section level3">
 <h3><span class="header-section-number">1.1.3</span> H περιβάλλον του RStudio</h3>
@@ -250,7 +250,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Για να βεβαιωθείτε πως τα πακέτα έχουν εγκατασταθεί σωστά, χρησιμοποιείστε τις παρακάτω εντολές και βεβαιωθέιτε πως δε λαμβάνετε κάποιο σφάλμα.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1"></a><span class="kw">library</span>(readr)</span>
 <span id="cb2-2"><a href="index.html#cb2-2"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<p>Για να κατεβάσετε τα δεδομένα που θα χρησιμοποιήσουμε σε αυτό το demo, εκτελέστε τις παρακάτω εντολές</p>
+<p>Για να κατεβάσετε τα δεδομένα που θα χρησιμοποιήσουμε σε αυτό το demo, εκτελέστε τις παρακάτω εντολές —–</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="index.html#cb3-1"></a><span class="co">#url</span></span>
 <span id="cb3-2"><a href="index.html#cb3-2"></a><span class="co">#data &lt;- read_csv(url)  </span></span></code></pre></div>
 
