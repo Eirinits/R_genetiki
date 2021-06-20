@@ -111,7 +111,7 @@ library(tidyverse)
 library(pheatmap)
 ```
 
-Για να κατεβάσετε τα δεδομένα που θα χρησιμοποιήσουμε σε αυτό το demo, εκτελέστε τις παρακάτω εντολές -----
+Για να κατεβάσετε τα δεδομένα που θα χρησιμοποιήσουμε σε αυτό το demo, εκτελέστε τις παρακάτω εντολές:
 
 ```{r}
 url_data <- "https://raw.githubusercontent.com/Eirinits/R_genetiki/main/patient_data.csv"
