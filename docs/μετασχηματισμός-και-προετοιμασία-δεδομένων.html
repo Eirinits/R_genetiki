@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Μετασχηματισμός και προετοιμασία δεδομένων | Εφαρμογές της R στη γενετική</title>
+  <meta name="description" content="Demo για την ημερίδα “Ο προγραμματισμός στη γενετική του ανθρώπου”" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Μετασχηματισμός και προετοιμασία δεδομένων | Εφαρμογές της R στη γενετική" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Demo για την ημερίδα “Ο προγραμματισμός στη γενετική του ανθρώπου”" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Μετασχηματισμός και προετοιμασία δεδομένων | Εφαρμογές της R στη γενετική" />
+  
+  <meta name="twitter:description" content="Demo για την ημερίδα “Ο προγραμματισμός στη γενετική του ανθρώπου”" />
+  
+
+<meta name="author" content="Eirini Tsirvouli" />
+
+
+<meta name="date" content="2021-06-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tύποι-δεδομένων-και-βασικές-εργασίες.html"/>
+<link rel="next" href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"> “Ο προγραμματισμός στη γενετική του ανθρώπου” </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Προετοιμασία</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#σύντομη-εισαγωγή-στο-rstudio"><i class="fa fa-check"></i><b>1.1</b> Σύντομη εισαγωγή στο RStudio</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#δημιουργήστε-ένα-rstudio-project"><i class="fa fa-check"></i><b>1.1.1</b> Δημιουργήστε ένα RStudio project</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#δημιουργία-του-πρώτου-σας-σεναρίου-r-r-script"><i class="fa fa-check"></i><b>1.1.2</b> Δημιουργία του πρώτου σας σεναρίου R (R script)</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#h-περιβάλλον-του-rstudio"><i class="fa fa-check"></i><b>1.1.3</b> H περιβάλλον του RStudio</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#kατέβασμα-απαραίτητων-αρχείων-και-πακέτων"><i class="fa fa-check"></i><b>1.1.4</b> Kατέβασμα απαραίτητων αρχείων και πακέτων</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="εισαγωγή.html"><a href="εισαγωγή.html"><i class="fa fa-check"></i><b>2</b> Εισαγωγή</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="εισαγωγή.html"><a href="εισαγωγή.html#ονομασία"><i class="fa fa-check"></i><b>2.1</b> Ονομασία</a></li>
+<li class="chapter" data-level="2.2" data-path="εισαγωγή.html"><a href="εισαγωγή.html#εντολές-συναρτήσεις-functions"><i class="fa fa-check"></i><b>2.2</b> Εντολές / Συναρτήσεις (Functions)</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html"><i class="fa fa-check"></i><b>3</b> Tύποι δεδομένων και βασικές εργασίες</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#tύποι-αντικειμένων-data-types"><i class="fa fa-check"></i><b>3.1</b> Tύποι αντικειμένων (Data types)</a></li>
+<li class="chapter" data-level="3.2" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#vectors-ακολουθίες"><i class="fa fa-check"></i><b>3.2</b> Vectors (ακολουθίες)</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#subsetting"><i class="fa fa-check"></i><b>3.2.1</b> Subsetting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><i class="fa fa-check"></i><b>4</b> Μετασχηματισμός και προετοιμασία δεδομένων</a></li>
+<li class="chapter" data-level="5" data-path="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><i class="fa fa-check"></i><b>5</b> Οπτικοποίηση και παραδείγμα με αληθινά δεδομένα</a></li>
+<li class="chapter" data-level="" data-path="τake-home-message.html"><a href="τake-home-message.html"><i class="fa fa-check"></i>Τake home message</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Εφαρμογές της R στη γενετική</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="μετασχηματισμός-και-προετοιμασία-δεδομένων" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Μετασχηματισμός και προετοιμασία δεδομένων</h1>
+<div class="fyi">
+<p>Στην πραγματικότητα, πριν ξεκινήσουμε την ανάλυση των δεδομένων μας χρειάζομαστε μία βασική εξερεύνηση και επεξεργασία των δεδομένων μας ώστε να βεβαιωθούμε για την ποιότητά τους, καθώς και να τα προετοιμάσουμε για δίαφορες στατιστικές αναλύσεις (π.χ. κανονικοποίηση (normalization))</p>
+</div>
+<p>Σε αυτή την ενότητα, θα δουλέψουμε με ήδη προτοιμασμένα δεδομένα. Αυτό το σετ δεδομένων (dataset) προέρχεται από μία προσομοίωση (simulation) δεδομένων από ασθενείς με καρκίνο της μήτρας. Όπως πολλά από τα δεδομένα που θα χρειαστείτε να αναλύσετε, τα συγκεκριμένα δεδομένα είναι διατεταγμένα σε γραμμές και στήλες (tabular data), όπως για παράδειγμα στο Εxcel.Κάθε γραμμή (row) αντιπροσωπεύει ένα ασθενή, ενώ κάθε στήλη (column) αντιπροσωπευέι ένα γονίδιο. Η τιμή κάθε κελιού προέρχεται από μία στατιστική ανάλυση που υπολογίζει τις στατιστικά-σημαντικές διαφορές ανάμεσα σε δείγματα ασθενών με καρκίνο και δείγματα από υγειής δωρητές. Τα δεδομένα περιέχονται στο αρχείο <code>patient_data.csv</code>. Κλινικές πληροφορίες για τους ασθενείς περιέχονται στο αρχείο <code>metadata.csv</code>.</p>
+<p>Υπάρχουν διάφοροι τρόποι εισαγωγής δεδομένων στο περιβάλλον της R. Στο συγκεκριμένο demo, θα επικεντρωθούμε στη χρήση των εργαλείων που συνοδεύουν την R (το λεγόμενο “base” R) για την εισαγωγή ενός αρχείου τιμών διαχωρισμένου με κόμμα (comma-seperated values - .csv). Θα χρειαστεί να φορτώσουμε το φύλλο χρησιμοποιώντας την εντολή <code>read.csv()</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;patient_data.csv&quot;</span>)</span>
+<span id="cb1-2"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb1-2" aria-hidden="true" tabindex="-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;metadata.csv&quot;</span>)</span></code></pre></div>
+<p>Aν δεν εχετε κατεβάσει ήδη τα αρχεία:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb2-1" aria-hidden="true" tabindex="-1"></a>url_data <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/Eirinits/R_genetiki/main/patient_data.csv&quot;</span></span>
+<span id="cb2-2"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb2-2" aria-hidden="true" tabindex="-1"></a>url_metadata <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/Eirinits/R_genetiki/main/metadata.csv&quot;</span></span>
+<span id="cb2-3"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(url_data)  </span>
+<span id="cb2-4"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb2-4" aria-hidden="true" tabindex="-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(url_metadata)  </span></code></pre></div>
+<p>Ένα πλαίσιο δεδομένων (dataframe) είναι ο τυπικός τρόπος για την αποθήκευση tabular data στην R. Τα dataframes θα μπορούσαν επίσης να θεωρηθούν ως μια συλλογή διανυσμάτων (vectors), τα οποία έχουν το ίδιο μήκος.</p>
+<p><img src="images/data-frame.svg" /><!-- -->
+Yπάρχουν διάφορες εντολές τις οποίες μπορούμε να χρησιμοποιήσουμε ώστε να μάθουμε περισσότερα ή να εξερευνήσουμε το dataframe μας.</p>
+<p>Μέγεθος:</p>
+<ul>
+<li><p><code>dim(data)</code> - επιστρέφει ένα διάνυσμα με τον αριθμό των γραμμών στο πρώτο στοιχείο και τον αριθμό των στηλών ως το δεύτερο στοιχείο (οι διαστάσεις του αντικειμένου)</p></li>
+<li><p><code>nrow(data)</code> - επιστρέφει τον αριθμό των γραμμών</p></li>
+<li><p><code>ncol(data)</code> - επιστρέφει τον αριθμό των στηλών</p></li>
+</ul>
+<p>Περιεχόμενο:</p>
+<ul>
+<li><p><code>head(data)</code> - δείχνει τις πρώτες 6 γραμμές</p></li>
+<li><p><code>tail(data)</code> - δείχνει τις τελευταίες 6 γραμμές</p></li>
+</ul>
+<p>Ονόματα:</p>
+<ul>
+<li><p><code>colnames(data)</code> - επιστρέφει τα ονόματα στηλών</p></li>
+<li><p><code>rownames(data)</code> - επιστρέφει τα ονόματα των γραμμών</p></li>
+</ul>
+<p>Περίληψη:</p>
+<ul>
+<li><p><code>str(data)</code> - δομή του αντικειμένου και πληροφορίες σχετικά με την τάξη, το μήκος και το περιεχόμενο κάθε στήλης</p></li>
+<li><p><code>summary(data)</code> - συνοπτικά στατιστικά στοιχεία για κάθε στήλη</p></li>
+</ul>
+<p>Το πλαίσιο δεδομένων μας αποτελείται από γραμμές και στήλες (έχει 2 διαστάσεις). Αν θέλουμε να εξαγάγουμε συγκεκριμένα δεδομένα από αυτό, πρέπει να καθορίσουμε τις “συντεταγμένες” που χρειαζόμαστε. Οι αριθμοί των γραμμών έρχονται πρώτοι και ακολουθούν οι αριθμοί στηλών. Μπορούμε να διαλέξουμε μία ή περισσότερες γραμμές ή/και στήλες ως εξής:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb3-1" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span>,] <span class="co"># Τυπώνει τη πρώτη γραμμή και όλες τις στήλες</span></span>
+<span id="cb3-2"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb3-2" aria-hidden="true" tabindex="-1"></a>data[,<span class="dv">1</span>] <span class="co"># Τυπώνει τη πρώτη στήλη και όλες τις γραμμές</span></span>
+<span id="cb3-3"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb3-3" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">1</span>,<span class="dv">1</span>] <span class="co"># Τυπώνει τη τιμή της πρώτης στήλης και της πρώτης γραμμής</span></span>
+<span id="cb3-4"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb3-4" aria-hidden="true" tabindex="-1"></a>data[,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>] <span class="co"># Τυπώνει τις τρεις πρώτες στήλες</span></span>
+<span id="cb3-5"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb3-5" aria-hidden="true" tabindex="-1"></a>data[<span class="dv">2</span>,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">6</span>)] <span class="co"># Τυπώνει τη 1η,4η και 6η στήλη και τη 2η γραμμή</span></span></code></pre></div>
+<p>Χρησιμοποιώντας την εντολή <code>summary()</code> μπορούμε να τυπώσουμε στην κονσόλα μας κάποια βασικά στατισικά στοιχεία για κάθε μία από τις στήλες.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div>
+<p>Για να εμφανίσουμε τις πληροφορίες μόνο για συγκεκριμένα γονίδια (δλδ συγκεκριμένες στήλες), θα δημιουργήσουμε ένα καινούργιο dataframe.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb5-1" aria-hidden="true" tabindex="-1"></a>sub_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(data[,<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>)])</span>
+<span id="cb5-2"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sub_df)</span></code></pre></div>
+<pre><code>##      ACACA              ACVRL1            AKT1         
+##  Min.   :-1.96766   Min.   :0.2393   Min.   :-2.37459  
+##  1st Qu.:-0.86273   1st Qu.:1.4539   1st Qu.:-0.92165  
+##  Median :-0.47530   Median :3.4676   Median :-0.30856  
+##  Mean   : 0.04109   Mean   :2.8210   Mean   : 0.06474  
+##  3rd Qu.: 1.36888   3rd Qu.:3.9381   3rd Qu.: 1.15501  
+##  Max.   : 3.11121   Max.   :4.8862   Max.   : 3.57591</code></pre>
+<p>Aν θέλαμε να διαλέξουμε τα γονίδια που μας ενδιαφέρουν μπορούμε να τα καλέσουμε με το όνομα τους</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb7-1" aria-hidden="true" tabindex="-1"></a>sub_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(data[,<span class="fu">c</span>(<span class="st">&quot;TP53&quot;</span>,<span class="st">&quot;MYC&quot;</span>)])</span></code></pre></div>
+<p>Mπορούμε επίσης να διαλέξουμε μία στήλη χρησιμοποιώντας το σύμβολο <code>$</code></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html#cb8-1" aria-hidden="true" tabindex="-1"></a>sub_df<span class="sc">$</span>TP53</span></code></pre></div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tύποι-δεδομένων-και-βασικές-εργασίες.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["R.pdf", "R.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
