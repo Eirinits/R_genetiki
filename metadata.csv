@@ -1,0 +1,501 @@
+patient_ID,Primary.Site,Gender,Vital.Status,Primary.Diagnosis,Ethnicity,Race,age
+subject1,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,25
+subject2,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,28
+subject3,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,28
+subject4,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,29
+subject5,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,29
+subject6,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,29
+subject7,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,30
+subject8,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,30
+subject9,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,31
+subject10,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,32
+subject11,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,24
+subject12,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,33
+subject13,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,not reported,33
+subject14,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,34
+subject15,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,34
+subject16,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,36
+subject17,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,36
+subject18,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,37
+subject19,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,37
+subject20,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,37
+subject21,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,american indian or alaska native,38
+subject22,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,38
+subject23,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,38
+subject24,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,38
+subject25,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,38
+subject26,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,39
+subject27,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,39
+subject28,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,39
+subject29,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,39
+subject30,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,40
+subject31,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,40
+subject32,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,40
+subject33,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,40
+subject34,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,40
+subject35,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,40
+subject36,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,40
+subject37,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,40
+subject38,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,41
+subject39,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,41
+subject40,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,41
+subject41,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,42
+subject42,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,42
+subject43,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject44,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject45,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject46,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject47,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,42
+subject48,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject49,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,42
+subject50,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,42
+subject51,Ovary,Female,Alive,Serous cystadenocarcinoma,hispanic or latino,white,42
+subject52,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,43
+subject53,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,43
+subject54,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,43
+subject55,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,43
+subject56,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,43
+subject57,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,43
+subject58,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,43
+subject59,Ovary,Female,Dead,Serous cystadenocarcinoma,hispanic or latino,white,44
+subject60,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,44
+subject61,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,44
+subject62,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,44
+subject63,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject64,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject65,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject66,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject67,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject68,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject69,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,45
+subject70,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject71,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject72,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,45
+subject73,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,45
+subject74,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,45
+subject75,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,45
+subject76,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,45
+subject77,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject78,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject79,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,46
+subject80,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject81,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject82,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject83,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,46
+subject84,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,47
+subject85,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,47
+subject86,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,47
+subject87,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject88,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject89,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject90,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,48
+subject91,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject92,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject93,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject94,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject95,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,black or african american,48
+subject96,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,48
+subject97,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,49
+subject98,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,49
+subject99,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject100,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject101,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject102,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject103,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject104,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject105,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject106,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject107,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,49
+subject108,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject109,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject110,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,49
+subject111,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject112,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,49
+subject113,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,49
+subject114,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,49
+subject115,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject116,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject117,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject118,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject119,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject120,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,50
+subject121,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject122,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject123,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,asian,50
+subject124,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject125,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject126,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,50
+subject127,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,50
+subject128,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,not reported,50
+subject129,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject130,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,50
+subject131,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,50
+subject132,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject133,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject134,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject135,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject136,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject137,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,51
+subject138,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,51
+subject139,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject140,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,51
+subject141,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,51
+subject142,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,black or african american,51
+subject143,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,black or african american,51
+subject144,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,not reported,51
+subject145,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,51
+subject146,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,51
+subject147,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,51
+subject148,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject149,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,asian,52
+subject150,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,52
+subject151,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject152,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject153,Ovary,Female,Alive,Serous cystadenocarcinoma,hispanic or latino,white,52
+subject154,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,52
+subject155,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject156,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject157,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,52
+subject158,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,52
+subject159,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject160,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,53
+subject161,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject162,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject163,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject164,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject165,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,53
+subject166,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject167,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,53
+subject168,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject169,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,53
+subject170,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,53
+subject171,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,53
+subject172,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,53
+subject173,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,53
+subject174,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,54
+subject175,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,54
+subject176,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,54
+subject177,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,54
+subject178,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,54
+subject179,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,54
+subject180,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,54
+subject181,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,54
+subject182,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,54
+subject183,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,54
+subject184,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,54
+subject185,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,55
+subject186,Ovary,Female,Alive,Cystadenocarcinoma,not hispanic or latino,black or african american,55
+subject187,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,black or african american,55
+subject188,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,55
+subject189,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,55
+subject190,Ovary,Female,Dead,Papillary serous cystadenocarcinoma,not hispanic or latino,black or african american,55
+subject191,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject192,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject193,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject194,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject195,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject196,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,55
+subject197,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,asian,55
+subject198,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject199,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,55
+subject200,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,55
+subject201,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,55
+subject202,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,55
+subject203,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject204,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject205,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,55
+subject206,Ovary,Female,Not Reported,Serous cystadenocarcinoma,not reported,not reported,55
+subject207,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,56
+subject208,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject209,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,56
+subject210,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,56
+subject211,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject212,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject213,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,56
+subject214,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject215,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject216,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject217,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject218,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,56
+subject219,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject220,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject221,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject222,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,56
+subject223,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,56
+subject224,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,56
+subject225,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,56
+subject226,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject227,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject228,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject229,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject230,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,57
+subject231,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject232,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,57
+subject233,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,57
+subject234,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,57
+subject235,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,57
+subject236,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,57
+subject237,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,57
+subject238,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,57
+subject239,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,57
+subject240,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,57
+subject241,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,57
+subject242,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,57
+subject243,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,57
+subject244,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,58
+subject245,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,58
+subject246,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject247,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject248,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,58
+subject249,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject250,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject251,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,58
+subject252,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject253,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,58
+subject254,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject255,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,58
+subject256,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject257,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject258,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject259,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject260,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject261,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject262,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,59
+subject263,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject264,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject265,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject266,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,59
+subject267,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject268,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,59
+subject269,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,59
+subject270,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,59
+subject271,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,59
+subject272,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject273,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject274,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,60
+subject275,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject276,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,american indian or alaska native,60
+subject277,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,60
+subject278,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,60
+subject279,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,60
+subject280,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject281,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject282,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject283,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,60
+subject284,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,60
+subject285,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,60
+subject286,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,60
+subject287,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,61
+subject288,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject289,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject290,Ovary,Female,Alive,Papillary serous cystadenocarcinoma,not reported,black or african american,61
+subject291,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,61
+subject292,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject293,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,61
+subject294,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,61
+subject295,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,61
+subject296,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject297,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject298,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject299,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject300,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,61
+subject301,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,62
+subject302,Ovary,Female,Dead,Serous cystadenocarcinoma,hispanic or latino,white,62
+subject303,Ovary,Female,Alive,Serous cystadenocarcinoma,hispanic or latino,white,62
+subject304,Ovary,Female,Alive,Serous cystadenocarcinoma,hispanic or latino,white,62
+subject305,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,62
+subject306,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,62
+subject307,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,62
+subject308,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,62
+subject309,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,62
+subject310,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,62
+subject311,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,62
+subject312,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,62
+subject313,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,62
+subject314,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject315,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,63
+subject316,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject317,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject318,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject319,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject320,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject321,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject322,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,63
+subject323,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,63
+subject324,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject325,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,63
+subject326,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject327,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,63
+subject328,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject329,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,64
+subject330,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,64
+subject331,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,64
+subject332,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject333,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,64
+subject334,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject335,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject336,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject337,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,64
+subject338,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,65
+subject339,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,65
+subject340,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject341,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject342,Ovary,Female,Alive,Leiomyosarcoma,not hispanic or latino,white,65
+subject343,Ovary,Female,Dead,Serous cystadenocarcinoma,hispanic or latino,not reported,65
+subject344,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject345,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject346,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,not reported,65
+subject347,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject348,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject349,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject350,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject351,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject352,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject353,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject354,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,65
+subject355,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,66
+subject356,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,66
+subject357,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,66
+subject358,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,66
+subject359,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,66
+subject360,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,66
+subject361,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,66
+subject362,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,66
+subject363,Ovary,Female,Dead,Papillary serous cystadenocarcinoma,not reported,black or african american,66
+subject364,Ovary,Female,Dead,Papillary serous cystadenocarcinoma,not reported,black or african american,66
+subject365,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,67
+subject366,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,native hawaiian or other pacific islander,67
+subject367,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,67
+subject368,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,67
+subject369,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,67
+subject370,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,67
+subject371,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,67
+subject372,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,67
+subject373,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,american indian or alaska native,67
+subject374,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,67
+subject375,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,67
+subject376,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,68
+subject377,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,68
+subject378,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,68
+subject379,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,68
+subject380,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,68
+subject381,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,68
+subject382,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,68
+subject383,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,69
+subject384,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,69
+subject385,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,69
+subject386,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,69
+subject387,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,69
+subject388,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,69
+subject389,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject390,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject391,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject392,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,70
+subject393,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject394,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject395,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject396,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,70
+subject397,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,70
+subject398,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,70
+subject399,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,70
+subject400,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,71
+subject401,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,71
+subject402,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,71
+subject403,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,71
+subject404,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,71
+subject405,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,71
+subject406,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,black or african american,71
+subject407,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,71
+subject408,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,71
+subject409,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,black or african american,72
+subject410,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,72
+subject411,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,72
+subject412,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,72
+subject413,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,72
+subject414,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,72
+subject415,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,72
+subject416,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,72
+subject417,Ovary,Female,Dead,Serous cystadenocarcinoma,hispanic or latino,white,72
+subject418,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,72
+subject419,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,73
+subject420,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,73
+subject421,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject422,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject423,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject424,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject425,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject426,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,73
+subject427,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,black or african american,73
+subject428,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,74
+subject429,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject430,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject431,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject432,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject433,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject434,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject435,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject436,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject437,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject438,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,74
+subject439,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject440,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject441,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,74
+subject442,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,74
+subject443,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,75
+subject444,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,75
+subject445,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,75
+subject446,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,75
+subject447,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,75
+subject448,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,76
+subject449,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,76
+subject450,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,76
+subject451,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,76
+subject452,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,76
+subject453,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,76
+subject454,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,76
+subject455,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,76
+subject456,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,asian,77
+subject457,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,77
+subject458,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,77
+subject459,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,77
+subject460,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,77
+subject461,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,77
+subject462,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,77
+subject463,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,77
+subject464,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,black or african american,78
+subject465,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,black or african american,78
+subject466,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,78
+subject467,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,78
+subject468,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,78
+subject469,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,black or african american,78
+subject470,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,78
+subject471,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,78
+subject472,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,79
+subject473,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,79
+subject474,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,79
+subject475,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,asian,80
+subject476,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,80
+subject477,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,80
+subject478,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,80
+subject479,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,80
+subject480,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject481,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject482,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject483,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,81
+subject484,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,81
+subject485,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject486,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject487,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,81
+subject488,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,black or african american,62
+subject489,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,82
+subject490,Ovary,Female,Dead,Serous cystadenocarcinoma,not hispanic or latino,white,83
+subject491,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,84
+subject492,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,not reported,85
+subject493,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,85
+subject494,Ovary,Female,Alive,Serous cystadenocarcinoma,not hispanic or latino,white,85
+subject495,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,67
+subject496,Ovary,Female,Dead,Serous cystadenocarcinoma,not reported,white,67
+subject497,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,69
+subject498,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,69
+subject499,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,69
+subject500,Ovary,Female,Alive,Serous cystadenocarcinoma,not reported,white,69
