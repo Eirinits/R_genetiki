@@ -10,7 +10,17 @@
 
 ```{r}
 data <- read.csv("patient_data.csv")
+metadata <- read.csv("metadata.csv")
 ```
+
+Aν δεν εχετε κατεβάσει ήδη τα αρχεία:
+```{r}
+url_data <- "https://raw.githubusercontent.com/Eirinits/R_genetiki/main/patient_data.csv"
+url_metadata <- "https://raw.githubusercontent.com/Eirinits/R_genetiki/main/metadata.csv"
+data <- read.csv(url_data)  
+metadata <- read.csv(url_metadata)  
+```
+
 
 Ένα πλαίσιο δεδομένων (dataframe) είναι ο τυπικός τρόπος για την αποθήκευση tabular data στην R. Τα dataframes θα μπορούσαν επίσης να θεωρηθούν ως μια συλλογή διανυσμάτων (vectors), τα οποία έχουν το ίδιο μήκος. 
 

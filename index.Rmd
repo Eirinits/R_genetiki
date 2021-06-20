@@ -114,8 +114,10 @@ library(pheatmap)
 Για να κατεβάσετε τα δεδομένα που θα χρησιμοποιήσουμε σε αυτό το demo, εκτελέστε τις παρακάτω εντολές -----
 
 ```{r}
-#url
-#data <- read_csv(url)  
+url_data <- "https://raw.githubusercontent.com/Eirinits/R_genetiki/main/patient_data.csv"
+url_metadata <- "https://raw.githubusercontent.com/Eirinits/R_genetiki/main/metadata.csv"
+data <- read.csv(url_data)  
+metadata <- read.csv(url_metadata)  
 ```
 
 ```{r include=FALSE}

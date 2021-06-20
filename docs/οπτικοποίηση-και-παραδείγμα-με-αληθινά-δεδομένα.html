@@ -159,7 +159,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#subsetting"><i class="fa fa-check"></i><b>3.2.1</b> Subsetting</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#factors"><i class="fa fa-check"></i><b>3.3</b> Factors</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><i class="fa fa-check"></i><b>4</b> Μετασχηματισμός και προετοιμασία δεδομένων</a></li>
 <li class="chapter" data-level="5" data-path="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><i class="fa fa-check"></i><b>5</b> Οπτικοποίηση και παραδείγμα με αληθινά δεδομένα</a></li>
@@ -186,15 +185,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Οπτικοποίηση και παραδείγμα με αληθινά δεδομένα</h1>
-<p>Ένα σημαντικό κομμάτι μίας περιγραφικής στατιστικής ανάλυσης είναι η οπτικοποίηση δεδομένων. Ένας αρκετά συχνός τρόπος οπτικοποίησης συνεχόμενων μεταβλητών είναι μέσω heatmaps (χάρτης θερμότητας). Ο όρος heatmap αναφέρεται σε ένα δισδιάστατο πίνακα όπου κάθε κελί(τιμή) αναπαραστάται με ένα συγκεκριμένο χρώμα.</p>
+<p>Ένα σημαντικό κομμάτι μίας περιγραφικής στατιστικής ανάλυσης είναι η οπτικοποίηση δεδομένων.</p>
+<p>Για την οπτικοποίηση ποσοτικών δεδομένων χρησιμοποιούμε τα ιστογράμματα (histograms), μέσω της εντολής
+<code>hist()</code>. Τα δεδομένα ανατίθενται σε ομάδες, οι οποίες αναπαριστούνται με ορθογώνια. Η βάση
+κάθε ορθογωνίου αντιστοιχεί στο εύρος της αντίστοιχης ομάδας (στη συγκεκριμένη περίπτωση 5 χρόνια), ενώ το ύψος αντιστοιχεί στη συχνότητα της αντίστοιχης παρατήρησης.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb1-1" aria-hidden="true" tabindex="-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;metadata.csv&quot;</span>)</span>
 <span id="cb1-2"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(metadata<span class="sc">$</span>age)</span></code></pre></div>
 <p><img src="R_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>Μέσω παρόμοιων οπτικοποιήσεων, είναι δυνατό να ομαδοποιήσουμε δεδομένα σε υποομάδες (clusters).</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pheatmap)</span>
-<span id="cb2-2"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb2-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;patient_data.csv&quot;</span>)</span>
-<span id="cb2-3"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pheatmap</span>(data)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(metadata<span class="sc">$</span>age, <span class="at">main =</span> <span class="st">&quot;Histogram of onset age&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Onset age&quot;</span>)</span></code></pre></div>
+<p><img src="R_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<p>Ένας αρκετά συχνός τρόπος οπτικοποίησης συνεχόμενων μεταβλητών είναι μέσω heatmaps (χάρτης θερμότητας). Ο όρος heatmap αναφέρεται σε ένα δισδιάστατο πίνακα όπου κάθε κελί (τιμή) αναπαραστάται με ένα συγκεκριμένο χρώμα. Οι γραμμές και στήλές ενός heatmap οργανώνονται βάση της ομοιότητάς τους, με τις πιο παρόμοιες παρατηρήσεις να παρουσιάζονται δίπλα-δίπλα στο γράφημα. Μέσω παρόμοιων οπτικοποιήσεων, είναι δυνατό να ομαδοποιήσουμε δεδομένα σε υποομάδες (clusters).</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pheatmap)</span>
+<span id="cb3-2"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb3-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;patient_data.csv&quot;</span>)</span>
+<span id="cb3-3"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pheatmap</span>(data)</span></code></pre></div>
 <p><img src="R_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pheatmap</span>(data, <span class="at">show_rownames =</span> F)</span></code></pre></div>
+<p><img src="R_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
 <div class="fyi">
 <p>Η R προσφέρει πολλές δυνατότητες για την οπτικοποίηση δεδομένων, είτε μέσω της Base R ή επιπλέον πακέτων. Ενα από τα πιο χρήσιμα πακέτα που θα ήταν καλό να εξοικειωθείτε είναι το <code>ggplot2</code>. Η σύνταξη των εντολών μπορεί να φανεί κάπως ιδιόμορφη σε πολλούς χρήστες, αλλά στο παρακάτω link θα βρείτε μερικές χρήσιμες πηγές για να ξεκινήσετε. Δείτε περισσότερα <a href="https://ggplot2.tidyverse.org/index.html">εδώ</a></p>
 </div>
