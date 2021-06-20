@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Εισαγωγή | Εφαρμογές της R στη γενετική</title>
   <meta name="description" content="Demo για την ημερίδα “Ο προγραμματισμός στη γενετική του ανθρώπου”" />
-  <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Εισαγωγή | Εφαρμογές της R στη γενετική" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Eirini Tsirvouli" />
 
 
-<meta name="date" content="2021-05-26" />
+<meta name="date" content="2021-06-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="tύποι-δεδομένων-και-βασικές-εργασίες.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,11 +51,74 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -70,16 +134,35 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./"> R στη γενετική</a></li>
+<li><a href="./"> “Ο προγραμματισμός στη γενετική του ανθρώπου” </a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Προετοιμασία</a></li>
-<li class="chapter" data-level="2" data-path="εισαγωγή.html"><a href="εισαγωγή.html"><i class="fa fa-check"></i><b>2</b> Εισαγωγή</a></li>
-<li class="chapter" data-level="3" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html"><i class="fa fa-check"></i><b>3</b> Tύποι δεδομένων και βασικές εργασίες</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Προετοιμασία</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#σύντομη-εισαγωγή-στο-rstudio"><i class="fa fa-check"></i><b>1.1</b> Σύντομη εισαγωγή στο RStudio</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#δημιουργήστε-ένα-rstudio-project"><i class="fa fa-check"></i><b>1.1.1</b> Δημιουργήστε ένα RStudio project</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#δημιουργία-του-πρώτου-σας-σεναρίου-r-r-script"><i class="fa fa-check"></i><b>1.1.2</b> Δημιουργία του πρώτου σας σεναρίου R (R script)</a></li>
+<li class="chapter" data-level="1.1.3" data-path="index.html"><a href="index.html#h-περιβάλλον-του-rstudio"><i class="fa fa-check"></i><b>1.1.3</b> H περιβάλλον του RStudio</a></li>
+<li class="chapter" data-level="1.1.4" data-path="index.html"><a href="index.html#kατέβασμα-απαραίτητων-αρχείων-και-πακέτων"><i class="fa fa-check"></i><b>1.1.4</b> Kατέβασμα απαραίτητων αρχείων και πακέτων</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="εισαγωγή.html"><a href="εισαγωγή.html"><i class="fa fa-check"></i><b>2</b> Εισαγωγή</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="εισαγωγή.html"><a href="εισαγωγή.html#ονομασία"><i class="fa fa-check"></i><b>2.1</b> Ονομασία</a></li>
+<li class="chapter" data-level="2.2" data-path="εισαγωγή.html"><a href="εισαγωγή.html#εντολές-συναρτήσεις-functions"><i class="fa fa-check"></i><b>2.2</b> Εντολές / Συναρτήσεις (Functions)</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html"><i class="fa fa-check"></i><b>3</b> Tύποι δεδομένων και βασικές εργασίες</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#tύποι-αντικειμένων-data-types"><i class="fa fa-check"></i><b>3.1</b> Tύποι αντικειμένων (Data types)</a></li>
+<li class="chapter" data-level="3.2" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#vectors-ακολουθίες"><i class="fa fa-check"></i><b>3.2</b> Vectors (ακολουθίες)</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="tύποι-δεδομένων-και-βασικές-εργασίες.html"><a href="tύποι-δεδομένων-και-βασικές-εργασίες.html#subsetting"><i class="fa fa-check"></i><b>3.2.1</b> Subsetting</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><a href="μετασχηματισμός-και-προετοιμασία-δεδομένων.html"><i class="fa fa-check"></i><b>4</b> Μετασχηματισμός και προετοιμασία δεδομένων</a></li>
-<li class="chapter" data-level="5" data-path="οπτικοποίηση.html"><a href="οπτικοποίηση.html"><i class="fa fa-check"></i><b>5</b> Οπτικοποίηση</a></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="5" data-path="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><a href="οπτικοποίηση-και-παραδείγμα-με-αληθινά-δεδομένα.html"><i class="fa fa-check"></i><b>5</b> Οπτικοποίηση και παραδείγμα με αληθινά δεδομένα</a></li>
+<li class="chapter" data-level="" data-path="τake-home-message.html"><a href="τake-home-message.html"><i class="fa fa-check"></i>Τake home message</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -100,9 +183,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="εισαγωγή" class="section level1">
+<div id="εισαγωγή" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Εισαγωγή</h1>
+<p>Aρχικά, μπορούμε να χρησιμοποιήσουμε την R και την κονσόλα του RStudio για να εκτελέσουμε βασικές μαθηματικές πράξεις:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="εισαγωγή.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div>
+<pre><code>## [1] 8</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="εισαγωγή.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span> <span class="sc">/</span> <span class="dv">7</span></span></code></pre></div>
+<pre><code>## [1] 1.714286</code></pre>
+<p>Παρόλα αυτά, για να μπορέσουμε να κάνουμε πιο ενδιαφέροντες και χρήσιμες αναλύσεις πρέπει να αναθέσουμε διάφορες τιμές σε ένα αντικείμενο ή μεταβλητή.</p>
+<p>Για να δημιουργήσετε ένα αντικείμενο χρειάζεστε:</p>
+<ul>
+<li>ένα όνομα (π.χ. “weight_kg”)</li>
+<li>μια τιμή (π.χ. «23»)</li>
+<li>το σύμβολο άναθεσης “&lt;-” (assignment symbol)
+Στο σενάριό σας, χρησιμοποιώντας το σύμβολο ανάθεσης R “&lt;-,” αντιστοιχίστε το “23” στο αντικείμενο “weight_kg”:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="εισαγωγή.html#cb5-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">23</span></span></code></pre></div>
+<p>Στη συνέχεια, εκτελέστε αυτήν τη γραμμή κώδικα στο σενάριό σας. Μπορείτε να εκτελέσετε μια γραμμή κώδικα πατώντας το κουμπί “Run” που βρίσκεται ακριβώς πάνω από την πρώτη γραμμή του σεναρίου σας ή μπορείτε να χρησιμοποιήσετε την κατάλληλη συντόμευση:</p>
+<p>Συντόμευση εκτέλεσης Windows/Linux: <code>Ctrl + Enter</code>
+Συντόμευση εκτέλεσης Mac: <code>Cmd (⌘) + Enter</code></p>
+<p>Για να εκτελέσετε πολλές γραμμές κώδικα, μπορείτε να επιλέξετε όλες τις γραμμές που θέλετε να εκτελέσετε και στη συνέχεια να πατήσετε "Run ή να χρησιμοποιήσετε τις παραπάνω συντομεύσεις.</p>
+<p>Αφού δημιουργήσουμε το αντικείμενο και βρίσκεται πλέον στη μνήμη της R, μπορούμε να το καλέσουμε και να το χρησιμοποιήσουμε σε διάφορες αριθμητικές πράξεις.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="εισαγωγή.html#cb6-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="sc">*</span> <span class="fl">2.2</span></span></code></pre></div>
+<pre><code>## [1] 50.6</code></pre>
+<p>Μπορούμε επίσης να αλλάξουμε τη τιμή ενός αντικειμένου αναθέτοντάς του μία διαφορετική τιμή</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="εισαγωγή.html#cb8-1" aria-hidden="true" tabindex="-1"></a>weight_kg <span class="ot">&lt;-</span> <span class="dv">50</span></span></code></pre></div>
+<p>Μπορούμε να χρησιμοποιήσουμε, επίσης, υπάρχοντα αντικείμενα για να δημιουργήσουμε καινούργια.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="εισαγωγή.html#cb9-1" aria-hidden="true" tabindex="-1"></a>weight_lb <span class="ot">&lt;-</span> <span class="fl">2.2</span> <span class="sc">*</span> weight_kg</span></code></pre></div>
+<div id="ονομασία" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Ονομασία</h2>
+<p>Ακολουθούν ορισμένες σημαντικές λεπτομέρειες σχετικά με την ονομασία αντικειμένων στην R.</p>
+<ul>
+<li>Αποφύγετε κενά και ειδικούς χαρακτήρες: Τα ονόματα αντικειμένων δεν μπορούν να περιέχουν κενά ή το σύμβολο μείον (-). Μπορείτε να χρησιμοποιήσετε το "_" για να κάνετε τα ονόματα πιο ευανάγνωστα. Θα πρέπει να αποφύγετε τη χρήση ειδικών χαρακτήρων στο όνομα του αντικειμένου σας (π.χ.! @ #. Κ.λπ.). Επίσης, τα ονόματα αντικειμένων δεν μπορούν να ξεκινούν με έναν αριθμό.</li>
+<li>Χρησιμοποιήστε σύντομα, εύκολα κατανοητά ονόματα: Θα πρέπει να αποφύγετε την ονομασία των αντικειμένων σας χρησιμοποιώντας μεμονωμένα γράμματα (π.χ. «n», «p», κ.λπ.). Αυτό είναι κυρίως για να σας ενθαρρύνει να χρησιμοποιήσετε ονόματα που θα ήταν λογικά σε οποιονδήποτε διαβάζει τον κωδικά σας (ένας συνάδελφος, ή ακόμα και εσείς έναν χρόνο από τώρα). Επίσης, η αποφυγή υπερβολικά μεγάλων ονομάτων θα κάνει τον κωδικό σας πιο ευανάγνωστο.</li>
+<li>Αποφύγετε τα κοινά χρησιμοποιούμενα ονόματα: Υπάρχουν πολλά ονόματα που ενδέχεται να έχουν ήδη ορισμό στη γλώσσα R (π.χ. «mean», «min», «max»). Μια ένδειξη ότι ένα όνομα που επιλέξατε υπάρχει ήδη ως ένα function, είναι ότι εάν αρχίσετε να πληκτρολογείτε το συγκεκριμένο όνομα στο RStudio και παίρνει μια έγχρωμη επισήμανση ή το RStudio σας δίνει μια προτεινόμενη αυτόματη συμπλήρωση, έχετε επιλέξει ένα όνομα που χρησιμοποιείται από τις βασικές λειτουργίες της R ή κάποιου πακέτου.</li>
+</ul>
+</div>
+<div id="εντολές-συναρτήσεις-functions" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Εντολές / Συναρτήσεις (Functions)</h2>
+<p>Με τον όρο functions αναφερόμαστε σε «σενάρια» που αυτοματοποιούν πιο περίπλοκα εντολές και λειτουργίες. Πολλές εντολές συμπεριλαμβλάνονται στην R, ενώ πιο εξειδικευμένες μπορούν να διατεθούν με την εισαγωγή πακέτων R. Μια συνάρτηση συνήθως παίρνει ένα ή περισσότερα ορίσματα (inputs) και συχνά (αλλά όχι πάντα) επιστρέφουν μια τιμή (output). Ένα τυπικό παράδειγμα θα ήταν η εντολή <code>sqrt()</code>. Το όρισμα της εντολής αυτής πρέπει να είναι ένας αριθμός και η τιμή που επιστρέφεται είναι η τετραγωνική ρίζα αυτού του αριθμού.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="εισαγωγή.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## [1] 2.236068</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="εισαγωγή.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(weight_kg)</span></code></pre></div>
+<pre><code>## [1] 7.071068</code></pre>
+<p>Άλλες εντολές δέχονται παραπάνω από ένα όρισματα, όπως για παράδειγμα η εντολή <code>round()</code>.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="εισαγωγή.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">8.3692</span>)</span></code></pre></div>
+<pre><code>## [1] 8</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="εισαγωγή.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">8.3692</span>, <span class="at">digits =</span> <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>## [1] 8.4</code></pre>
 
+</div>
 </div>
             </section>
 
