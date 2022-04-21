@@ -1,3 +1,13 @@
+EN:
+The applications of R in genetics.
+
+Material for the online training day
+"Modern digital programming capabilities and their applications in Human Genetics".
+
+Organized by Association of Medical Geneticists in Greece
+26/6/2021
+
+GR:
 Οι εφαρμογές της R στη γενετική.
 
 Yλικό για τη διαδικτυακή εκπαιδευτική ημερίδα
